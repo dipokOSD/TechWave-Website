@@ -49,6 +49,9 @@ nav,
    color: #00FF88;
    font-weight: 600;
 }
+p{
+     color: #ffffff71;
+}
 
 /* nav related styls */
 nav{
@@ -87,7 +90,8 @@ nav{
     max-height: 760px;
      /* border: 2px solid red;  */
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-position: center;
+    background-size: cover;
     color: #FFFFFF;
     
 }
@@ -114,7 +118,7 @@ nav{
 .rounded-shap{
      width: 100%; 
      max-width: 420px; 
-    margin-top: 100px;
+    margin-top: 5%;
     height: auto;
    
     
@@ -122,7 +126,7 @@ nav{
 
 .microphone{
     width: 116px;
-    margin-top: 50px;
+    margin-top: 3%;
     height: auto;
     position: absolute;
     top: 50%;
@@ -138,8 +142,8 @@ nav{
     font-size: 1.12rem;
     font-weight: 600;
     position: absolute;
-    left: 685px;
-    top: 100px;
+    left: 50%;
+    top: 15%;
 }
 
 /* .techWabe-section{
@@ -234,7 +238,6 @@ hr{
 }
 
 .techwabe-card{
-    /* max-width: 380px; */
     /* border: 2px solid red; */
     padding: 40px;
     background-color: #351165;
@@ -383,6 +386,19 @@ hr{
     align-items: center;
 }
 
+.Alex-kumar{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+
+.Alex-kumar-discription{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 16px;
+   
+}
 
 /* footer related styles */
 
@@ -391,10 +407,16 @@ hr{
     background-repeat: no-repeat;
     background-size: cover;
     color: #FFFFFF;
-    background-position: 100%;
-    text-align: center;
-    padding: 120px;
+    background-position: center;
+    
 
+}
+
+.footer-contant{
+    max-width: 1360px;
+    margin:0 auto ;
+    text-align: center;
+    padding: 120px 0; 
 }
 
 .footer-section h1{
@@ -406,8 +428,9 @@ hr{
     max-width: 544px;
     margin: 0 auto;
     color: #FFFFFF;
-    display: flex;
-     justify-content: space-between; 
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+     /* justify-content: space-between;  */
     margin-top: 32px;
     margin-bottom: 32px;
 
@@ -420,8 +443,10 @@ hr{
 
 
 
+
+
 /* responsive design for mobail */
-@media screen and (max-width:576px) {
+@media screen and (max-width:776px) {
     .hember-icon{
         display: ;
     }
@@ -438,28 +463,31 @@ hr{
     .rounded-shap {
     /* width: 100%; */
     max-width: 200px;
-    /* margin-top: 100px;
+     margin-top: 15%;
     height: auto; */
 }
 
-.microphone-section{
+ .microphone-section{
     padding: 0px;
 }
 
 .microphone{
-    width: 47px;
+    max-width: 47px;
+    margin-top: 7%;
     
 }
-    
 
-.rounded-shap,
-.microphone{
-    margin-top: 0px;
-}
+/* .rounded-shap{
+    margin-top: px;
+} */
+
+/* .microphone{
+    margin-top: 1%;
+}  */
 
 .microphone-section span{
-    left: 330px;
-    top: 0;
+    left: 60%;
+    top: 30%;
 }
 
 .poduct-discription{
@@ -468,14 +496,47 @@ hr{
 
 .card-containar{
     grid-template-columns: repeat(2,1fr);
+    gap: 40px;
 }
 
-.techwae-layout{
+.techwae-layout,
+.episodes-card-containar{
     grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(1,1fr);
     justify-content: center;
     align-items: center;
     padding-left: 20px;
     padding-right: 20px;
+     gap: 40px; 
+} 
+
+.techwae-layout div:nth-child(1){
+    grid-row: span 1;
+}
+
+.meet-host{
+    flex-direction: column;
+}
+
+.Alex-kumar,
+.Alex-kumar-discription {
+    text-align: center;
+}
+
+.meet-host-icon {
+    margin: 0 auto;
+}
+
+.footer-section{
+
+}
+
+
+.footer-icon{
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,2fr);
+    gap: 20px;
+}
 }
 
 
@@ -483,8 +544,7 @@ hr{
 
 
 
-
-@media screen and (min-width:576px) and (max-width:2000px) {
+@media screen and (min-width:776px) and (max-width:2000px) {
     .hember-icon{
        display: none;
 }
