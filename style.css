@@ -487,7 +487,7 @@ hr{
 }
 }
 
-@media screen and (min-width:576px) and (max-width:776px) {
+@media screen and (max-width:776px) {
     .hember-icon{
         display: ;
     }
